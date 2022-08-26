@@ -1,0 +1,50 @@
+{
+  "name": "react18-mui-formik",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:homolog": "NODE_ENV=production tsc && vite build --mode homolog",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.94",
+    "@mui/material": "^5.10.0",
+    "@mui/styled-engine-sc": "^5.10.0",
+    "@mui/x-data-grid": "^5.15.1",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
+    "fetch-jsonp": "^1.2.1",
+    "formik": "^2.2.9",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.5.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5",
+    "text-mask-addons": "^3.8.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/react": "^18.0.15",
+    "@types/react-big-calendar": "^0.38.1",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}
