@@ -1,3 +1,4 @@
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import CloseIcon from "@mui/icons-material/Close";
 import { DialogTitle, Stack, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
@@ -6,9 +7,10 @@ import React from "react";
 interface TitleProps {
   label?: string;
   component?: React.ReactNode;
+  backButton?: () => void;
   closeButton?: () => void;
 }
-function Title({ label, component, closeButton }: TitleProps) {
+function Title({ label, component, closeButton, backButton }: TitleProps) {
   function TitleContent() {
     return component ? (
       <>{component}</>
@@ -18,18 +20,17 @@ function Title({ label, component, closeButton }: TitleProps) {
   }
   return (
     <DialogTitle>
-      <Stack direction="row" justifyContent="space-between">
-        <TitleContent />
+      <Stack direction="row" alignItems="center" justifyContent="space-between">
+        <Stack direction="row" alignItems="center">
+          {backButton && (
+            <IconButton color="primary" onClick={backButton}>
+              <ArrowBackIcon />
+            </IconButton>
+          )}
+          <TitleContent />
+        </Stack>
         {closeButton && (
-          <IconButton
-            color="secondary"
-            onClick={closeButton}
-            sx={{
-              position: "absolute",
-              right: 8,
-              top: 8,
-            }}
-          >
+          <IconButton color="primary" onClick={closeButton}>
             <CloseIcon />
           </IconButton>
         )}

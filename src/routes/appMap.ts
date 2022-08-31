@@ -7,7 +7,6 @@ export default {
     home: "/admin/home",
   },
   docs: {
-    ux: "docs/ux",
-    pallete: "docs/palette",
+    ux: "/docs/ux",
   },
 };

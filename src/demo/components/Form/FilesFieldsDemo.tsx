@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import { FileField, Form, Formik } from "components/Form";
 import SelectedFiles from "components/SelectedFiles";
 
-function FilesFields() {
+function FilesFieldsDemo() {
   return (
     <Formik initialValues={{ files: null }} onSubmit={() => {}}>
       {({ values, handleSubmit, setFieldValue }) => {
@@ -19,4 +19,4 @@ function FilesFields() {
   );
 }
 
-export default FilesFields;
+export default FilesFieldsDemo;

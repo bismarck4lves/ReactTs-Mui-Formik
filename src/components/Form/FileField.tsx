@@ -16,7 +16,7 @@ export function FileField({
   ...rest
 }: FileFieldProps) {
   const { setFieldValue } = rest;
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps } = useDropzone({
     onDrop: (acceptedFiles) => {
       setFieldValue("files", acceptedFiles);
     },
@@ -40,7 +40,6 @@ export function FileField({
       >
         <Stack spacing={2} justifyContent="center" alignItems="center">
           {icon ? icon : <CloudUploadIcon color="secondary" fontSize="large" />}
-
           <Typography>{mensagem}</Typography>
         </Stack>
       </Box>

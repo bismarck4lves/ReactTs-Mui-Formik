@@ -2,7 +2,7 @@ import { DeleteButton } from "components/Button";
 import { DataGrid } from "components/DataGrid";
 import stocks from "../mocks/stocks";
 
-function TablesExemple() {
+function TablesExemplePage() {
   const columns = [
     {
       field: "id",
@@ -38,4 +38,4 @@ function TablesExemple() {
   />;
 }
 
-export default TablesExemple;
+export default TablesExemplePage;

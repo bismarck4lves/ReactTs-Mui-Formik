@@ -1,16 +1,10 @@
-const foo = {
-  name: "bismarck",
-  idade: 18,
-  endereco:  "alameda dos anjos 666"
-};
+const a = {
+    home: "Home",
+    buttons: "Buttons",
+  };
 
-const foo2 = {...foo, ...{name:"alameda dos anjos" }}
-
-
-const  {name, ...rest} = foo
-
-console.log(
-    name,
-    rest
-    
-)
+const arr = Object.keys(a).map(item=> (
+     a[item]
+))
+  
+console.log(arr)

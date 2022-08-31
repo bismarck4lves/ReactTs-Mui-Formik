@@ -42,8 +42,7 @@ function SelectedFiles(props: SelectedFilesProps) {
                 }
                 secondary={
                   <React.Fragment>
-                    <Typography noWrap></Typography>
-                    <Typography>Tamanho: {file.size}kb</Typography>
+                    <Typography color="primary">Tamanho: {file.size}kb</Typography>
                   </React.Fragment>
                 }
               />

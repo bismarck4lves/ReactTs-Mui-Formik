@@ -38,7 +38,7 @@ function SubSession(props: PropsWithChildren<SubSessionProps>) {
     </div>
   );
 }
-function Pallete() {
+function PalleteDemo() {
   const patterMaindar = ["main", "dark", "light"];
   const commons = ["white", "black"];
   const backGrounds = ["default", "paper"];
@@ -143,4 +143,4 @@ function Pallete() {
   );
 }
 
-export default Pallete;
+export default PalleteDemo;

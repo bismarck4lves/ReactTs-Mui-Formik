@@ -3,7 +3,7 @@ import Typography from "components/Typography";
 import { PropsWithChildren } from "react";
 
 interface SessionProps {
-  title: string;
+  title?: string;
   elevation?: number;
   background?: "background.paper" | "background.default";
 }

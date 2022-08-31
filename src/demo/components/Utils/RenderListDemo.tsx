@@ -9,9 +9,9 @@ import ListItemText from "@mui/material/ListItemText";
 import { Button } from "components/Button";
 import RenderList from "components/RenderList";
 import { useState } from "react";
-import stocks from "../mocks/stocks";
+import stocks from "../../mocks/stocks";
 
-function RenderListExemple(props) {
+function RenderListDemo() {
   const [state, setState] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -57,4 +57,4 @@ function RenderListExemple(props) {
   );
 }
 
-export default RenderListExemple;
+export default RenderListDemo;
